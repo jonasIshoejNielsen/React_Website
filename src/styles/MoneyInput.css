@@ -1,0 +1,10 @@
+.moneyInputWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.kr {
+    margin-left: 5px;
+    line-height: 40px;
+}

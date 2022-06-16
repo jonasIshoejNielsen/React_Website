@@ -1,0 +1,54 @@
+.artistButton {
+    cursor: pointer;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    color: var(--main-bg-sort);
+    margin: 0 10px 10px 10px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+.artistButton:hover {
+    font-size: 18px;
+}
+.artistWrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.artistImage {
+    height: 101px;
+    width: 180px;
+}
+.artistImage img {
+    width: 100%;
+    height: 100%;
+}
+.artistTitle {
+    height: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 2px;
+}
+.active {
+    background: var(--main-bg-støvetpink);
+    color: var(--main-colormatch-støvetpink);
+}
+.disabled {
+    cursor: not-allowed;
+}
+.confirm {
+    transition: none;
+    cursor: unset;
+}
+.confirm:hover {
+    font-size: unset;
+}
+

@@ -1,0 +1,90 @@
+.ratingButton {
+    background: #d4d4d4;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+    color: black;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin: 5px 20px 0 0;
+    position: relative;
+    z-index: 2;
+}
+.active {
+    background: var(--main-bg-støvetpink);
+    color: var(--main-colormatch-støvetpink);
+}
+.ratingComponentRow {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    z-index: 2;
+}
+.ratingComponentRow .ico {
+    width: 40px;
+    margin-right: 40px;
+}
+
+.ratingWrapper.flex-row {
+    display: flex;
+    justify-content: center;
+}
+
+.confirm {
+    cursor: unset;
+}
+.rowLine {
+    position: absolute;
+    width: 337px;
+    height: 4px;
+    background: #fe86b6;
+    z-index: 1;
+    top: 39px;
+}
+
+/*Breakpoint for large desktops*/
+@media only screen and (max-width: 1440px) {
+
+}
+
+/*Breakpoint for laptops*/
+@media only screen and (max-width: 1024px) {
+
+}
+
+/*Breakpoint for tablets*/
+@media only screen and (max-width: 768px) {
+
+}
+
+/*Breakpoint for large mobile*/
+@media only screen and (max-width: 480px) {
+    .ratingComponentRow {
+        flex-direction: column;
+        padding: 10px 15px 10px 15px;
+    }
+    .ratingWrapper {
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+    }
+    .ratingComponentRow .ico {
+        width: 40px;
+        margin: 0 20px 0 0;
+        display: flex;
+        flex: 1;
+        flex-direction: column-reverse;
+    }
+    .ratingButton {
+        margin: 20px 0 0 0;
+    }
+    .rowLine {
+        width: 4px;
+        height: 351px;
+        background: #fe86b6;
+        right: 48px;
+        top: 90px;
+    }
+}

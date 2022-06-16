@@ -1,0 +1,253 @@
+@import url("reset.css");
+@font-face {
+    font-family: Kreon;
+    src: url('../fonts/Kreon-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: Kreon-Bold;
+    src: url('../fonts/Kreon-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: Open-Sans;
+    src: url('../fonts/OpenSans-Regular.ttf') format("truetype");
+}
+
+:root {
+    --main-bg-lysblå: #EDF3FF;
+    --main-colormatch-lysblå: #010D0B;
+
+    --main-bg-dybgrøn: #012024;
+    --main-colormatch-dybgrøn: white;
+
+    --main-bg-mørkgrøn: #004450;
+    --main-colormatch-mørkgrøn: white;
+
+    --main-bg-støvetpink: #FE86B6;
+    --main-colormatch-støvetpink: #010D0B;
+
+    --main-bg-sort: #010D0B;
+    --main-colormatch-sort: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open-Sans', sans-serif;
+    background-color: var(--main-bg-sort);
+    min-width: 320px;
+}
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    font-family: 'Kreon', serif;
+}
+p {
+    padding: 5px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.button {
+    padding: 20px;
+}
+.loader {
+    justify-content: center;
+    flex-direction: column;
+}
+.loader.hide {
+    display: none;
+}
+.loader.display {
+    display: flex;
+}
+.blockWrapper {
+    display: flex;
+    flex-direction: row;
+}
+.leftColumn {
+    width: 10%;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rightColumn {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+    flex: 1;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+input {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input[type="radio"] {
+    width: 25px;
+    height: 25px;
+}
+.radioBoxWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+}
+.radioBoxTitle {
+    line-height: 30px;
+    padding: 0 10px 0 10px;
+}
+.inputWrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 5px 110px 5px 5px;
+}
+.inputWrapper .title {
+    width: 89px;
+    display: flex;
+    padding: 10px;
+}
+.bottomTile {
+    background: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px;
+}
+.warning {
+    position: relative;
+    padding: .75rem 1.25rem;
+    border-radius: .25rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    margin: 10px;
+}
+.warning.hide {
+    display: none;
+}
+.btn {
+    font-family: inherit;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 300px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn-front {
+    width: 285px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.logoTile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 84px;
+    padding: 15px 0 15px 10%;
+}
+
+/*///////////////////
+Media resizing
+////////////////////*/
+
+/*Breakpoint for large desktops*/
+@media only screen and (max-width: 1440px) {
+
+}
+
+/*Breakpoint for laptops*/
+@media only screen and (max-width: 1024px) {
+
+}
+
+/*Breakpoint for tablets*/
+@media only screen and (max-width: 768px) {
+    .blockWrapper {
+        flex-direction: column;
+    }
+    .leftColumn {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        display: flex;
+        flex: 1;
+        height: auto;
+        padding: 0;
+    }
+    .inputWrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .inputWrapper .title {
+        width: 100%;
+        justify-content: center;
+    }
+    .logoTile {
+        padding: 15px;
+    }
+}
+
+/*Breakpoint for large mobile*/
+@media only screen and (max-width: 425px) {
+
+}

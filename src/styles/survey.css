@@ -1,0 +1,54 @@
+.surveyTile {
+    padding: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    background: #ffffff;
+    flex-direction: column;
+}
+.surveyTile .body {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.surveyTile .title {
+    padding: 5px 0 15px 0;
+}
+/**/
+.surveyTile.logoTile {
+    background: var(--main-bg-sort);
+    color: var(--main-colormatch-sort);
+}
+.surveyTile.introTile {
+    background: var(--main-bg-støvetpink);
+    color: var(--main-colormatch-støvetpink);
+}
+.surveyTile.artistTile {
+    background: var(--main-bg-mørkgrøn);
+    color: var(--main-colormatch-mørkgrøn);
+}
+.surveyTile.ratingTile {
+    background: var(--main-bg-dybgrøn);
+    color: var(--main-colormatch-dybgrøn);
+}
+.surveyTile.moneyTile {
+    background: var(--main-bg-lysblå);
+    color: var(--main-colormatch-lysblå);
+}
+.surveyTile.foodTile {
+    background: var(--main-bg-sort);
+    color: var(--main-colormatch-sort);
+}
+.surveyTile.aboutTile {
+    background: var(--main-bg-støvetpink);
+    color: var(--main-colormatch-støvetpink);
+}
+.surveyTile.bottomTile {
+    background: var(--main-bg-mørkgrøn);
+    color: var(--main-colormatch-mørkgrøn);
+ }
+
+input:disabled, textarea:disabled{
+    background-color: var(--main-bg-lysblå);
+}
